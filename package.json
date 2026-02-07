@@ -1,0 +1,51 @@
+{
+  "name": "cron8n",
+  "version": "1.0.0",
+  "description": "CLI tool for managing n8n cron-triggered workflows",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "cron8n": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/cli.js",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "n8n",
+    "cron",
+    "workflow",
+    "automation",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2",
+    "zod": "^3.23.8",
+    "undici": "^6.19.8",
+    "cron-parser": "^4.9.0",
+    "pathe": "^1.1.2",
+    "nanoid": "^5.0.7",
+    "kleur": "^4.1.5",
+    "fastify": "^4.28.1",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsup": "^8.2.4",
+    "vitest": "^1.6.0",
+    "@types/node": "^18.19.44",
+    "@types/prompts": "^2.4.9"
+  }
+}
