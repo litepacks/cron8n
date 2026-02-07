@@ -203,7 +203,7 @@ class N8nClient {
    */
   async updateWorkflow(options: UpdateWorkflowOptions): Promise<N8nWorkflow> {
     const { id, ...updates } = options
-    const response = await this.request<N8nWorkflow>('PATCH', `/workflows/${id}`, updates)
+    const response = await this.request<N8nWorkflow>('PUT', `/workflows/${id}`, updates)
     return N8nWorkflowSchema.parse(response)
   }
 
