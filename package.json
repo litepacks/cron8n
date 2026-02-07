@@ -1,7 +1,15 @@
 {
   "name": "cron8n",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for managing n8n cron-triggered workflows",
+  "homepage": "https://github.com/litepacks/cron8n",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litepacks/cron8n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litepacks/cron8n/issues"
+  },
   "type": "module",
   "main": "./dist/cli.js",
   "bin": {
@@ -24,7 +32,7 @@
     "automation",
     "cli"
   ],
-  "author": "",
+  "author": "cond",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
